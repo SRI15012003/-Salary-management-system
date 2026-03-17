@@ -9,12 +9,3 @@ CREATE TABLE employees (
     department VARCHAR(50),
     basic_salary INT
 );
-
-CREATE TABLE salaries (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    emp_id INT,
-    hra INT,
-    bonus INT,
-    total_salary INT,
-    FOREIGN KEY (emp_id) REFERENCES employees(id)
-);
