@@ -1,0 +1,17 @@
+Employees
+---------
+id (PK)
+name
+email
+department
+basic_salary
+
+        ↓ (1-to-many)
+
+Salaries
+---------
+id (PK)
+emp_id (FK)
+hra
+bonus
+total_salary
